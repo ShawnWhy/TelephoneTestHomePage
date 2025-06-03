@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-link: #2563eb;
+  --color-gray-1: #aaaaaa;
+}
+
+body {
+  @apply bg-[var(--color-background)] font-['Roboto_Serif'] text-[var(--color-text)];
+}
+
+h1 {
+  @apply text-2xl font-extrabold font-['Roboto_Serif'] uppercase leading-tight;
+}
+
+h2 {
+  @apply text-lg font-bold font-['Roboto_Serif'] uppercase leading-tight;
+}
+
+a {
+    @apply underline;
+    color: var(--color-link);
+}
+
+
+
+
