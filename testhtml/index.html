@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="mainContainer">
@@ -12,7 +13,64 @@
     <div class="rightBalls"></div>
     <div class="grainTexture"></div>
     <div class="title"></div>
-    <div class="eyeAnimation"></div>
+    <canvas class="eyeAnimation" id="eyeAnimationCanvas" width="80" height="80"></canvas>
+    <script>
+    // Array of image paths for each frame
+    const eyeFrames = [];
+    for (let i = 1; i <= 16; i++) {
+        eyeFrames.push(`./images/eye animation2/eyes_layer ${i}.svg`);
+    }
+
+    const canvas = document.getElementById('eyeAnimationCanvas');
+    const ctx = canvas.getContext('2d');
+    const frameCount = eyeFrames.length;
+    const frameDuration = 3000 / frameCount; // 3s animation, 16 frames
+
+    // Preload images
+    const images = [];
+    let loaded = 0;
+    for (let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = eyeFrames[i];
+        img.onload = () => {
+            loaded++;
+            if (loaded === frameCount) startAnimation();
+        };
+        images.push(img);
+    }
+
+    function startAnimation() {
+        let startTime = null;
+        function animateEye(ts) {
+            if (!startTime) startTime = ts;
+            const elapsed = (ts - startTime) % 3000;
+            const frameIdx = Math.floor(elapsed / frameDuration);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Draw the image centered without stretching (preserve aspect ratio)
+            const img = images[frameIdx];
+            const imgAspect = img.width / img.height;
+            const canvasAspect = canvas.width / canvas.height;
+            let drawWidth, drawHeight, offsetX, offsetY;
+
+            if (imgAspect > canvasAspect) {
+                drawWidth = canvas.width;
+                drawHeight = canvas.width / imgAspect;
+                offsetX = 0;
+                offsetY = (canvas.height - drawHeight) / 2;
+            } else {
+                drawHeight = canvas.height;
+                drawWidth = canvas.height * imgAspect;
+                offsetX = (canvas.width - drawWidth) / 2;
+                offsetY = 0;
+            }
+
+            ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+            requestAnimationFrame(animateEye);
+        }
+        requestAnimationFrame(animateEye);
+        // Start the animation
+    }
+    </script>
 
     <div class="button">
     <div class="grainTexture"></div>
