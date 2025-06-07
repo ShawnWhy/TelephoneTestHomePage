@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="55.827084mm"
+   height="55.827084mm"
+   viewBox="0 0 55.827084 55.827084"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:export-batch-path="..\..\codingprojects\TelephoneTestHomePage\testhtml\images\circleAnimation"
+   inkscape:export-batch-name="batch"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="circles.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.53858859"
+     inkscape:cx="460.46278"
+     inkscape:cy="283.14747"
+     inkscape:window-width="1846"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer11" /><defs
+     id="defs1"><clipPath
+       id="clip0_6491_7746"><rect
+         width="211"
+         height="211"
+         fill="#ffffff"
+         transform="translate(20,713)"
+         id="rect4"
+         x="0"
+         y="0" /></clipPath></defs><g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="Layer 4"
+     transform="translate(-77.086459,-120.58646)"><g
+       clip-path="url(#clip0_6491_7746)"
+       id="g1"
+       transform="matrix(0.26458333,0,0,0.26458333,71.794792,-68.061456)"
+       style="fill:none"><path
+         d="M 163.21,722.085 C 151.525,717.511 138.806,715 125.5,715 68.3385,715 22,761.339 22,818.5 c 0,1.171 0.0219,2.338 0.0605,3.5 H 20.0596 C 20.0217,820.838 20,819.671 20,818.5 20,760.234 67.234,713 125.5,713 c 13.723,0 26.834,2.62 38.859,7.387 z M 37.6826,876.982 C 28.6969,863.516 22.7256,847.868 20.7344,831 H 22.75 c 1.9731,16.39 7.776,31.601 16.4893,44.712 z m 40.9551,36.064 C 62.9352,905.248 49.452,893.653 39.3877,879.463 l 1.5537,-1.269 c 9.8872,13.98 23.1527,25.401 38.6094,33.072 z M 208.895,883.124 C 189.595,907.994 159.417,924 125.5,924 c -14.699,0 -28.6954,-3.008 -41.4092,-8.439 l 0.9151,-1.785 C 97.4439,919.069 111.13,922 125.5,922 c 33.299,0 62.923,-15.726 81.855,-40.155 z M 176.779,728.577 c -2.873,-1.642 -5.831,-3.151 -8.868,-4.516 l 1.139,-1.681 c 3.034,1.377 5.991,2.893 8.863,4.54 z M 231,818.5 c 0,21.831 -6.631,42.114 -17.989,58.943 l -1.547,-1.285 C 222.538,859.681 229,839.845 229,818.5 c 0,-35.279 -17.651,-66.435 -44.603,-85.119 l 1.13,-1.652 C 213.005,750.773 231,782.536 231,818.5 Z"
+         fill="#d4af37"
+         id="path1" /></g></g></svg>
