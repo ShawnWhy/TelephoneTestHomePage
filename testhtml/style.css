@@ -36,7 +36,8 @@
 }
 .mainContainer {
     width: 100vw;
-    height: 100vh;
+    height:max-content;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +47,7 @@
 }
 .frame2{
     position:absolute;
-    height:80%;
+    min-height:80%;
     width:80%;
     border:2px  solid;
     border-color: #d4af37;
@@ -135,6 +136,25 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.phases{
+    position: absolute;
+    top:calc(5% + 14px);
+    /* width:100%; */
+    width:250px;
+    height: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url('./images/phases.svg');
+    background-color: #060622ff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 3;
+
+
+}
 
 /* Grain texture styling */
 .grainTexture {
@@ -162,6 +182,7 @@
     
     letter-spacing: 2px;
     z-index: 3;
+    margin-bottom:-15px;
 }
 .subtitleText{
     position: relative;
@@ -179,9 +200,16 @@
     letter-spacing: 2px;
     z-index: 3;
 }
+
 /* Title styling */
 .title {
-    position: relative
+    position: relative;
+    margin-bottom:50px;
+    z-index: 0;
+    
+    margin:auto;
+    margin-top:50px;
+    
 
     /* font-size: 2.5rem;
     font-weight: bold;
@@ -197,6 +225,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin:auto;;
 }
 
 /* Eye animation styling */
@@ -259,34 +288,60 @@
     background-repeat: no-repeat;
     /* background-size:cover; */
     position:relative;
+    margin:10px;
+    
 
 
 }
 .button.start{
     background-image:url('./images/Button-start.svg');
-        width:220px;
+        min-width:220px;
 
 }
 
 .button.tutorial{
     background-image:url('./images/Button-tutorial.svg');
-    width:220px;
+    min-width:220px;
 }
 
 .button.luck{
-    background-image:url('./images/Button-luck.svg')
+    background-image:url('./images/Button-luck.svg');
+        min-width:180px;
+        margin-left:5px;
+
 }
 
-.button:hover{
-    top:-5px;
+
+
+
+
+.button:hover {
+    top: -5px;
 }
 
 .buttonsContainer {
     position: relative;
-    width: 40%;
+    margin: 0 auto;
+    /* width: 60%; */
+    width:max-content;
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
+}
+@media (max-width: 850px) {
+    .buttonsContainer {
+        flex-direction: column;
+        
+}   
+    .button {
+        min-width: 100%;
+        margin: 0;
+        background-size: contain    ;
+    }
+    .button.start, .button.tutorial, .button.luck {
+        min-width: 100%;
+    }
 }
 
 .visually-hidden{
