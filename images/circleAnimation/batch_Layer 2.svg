@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="55.827084mm"
+   height="55.827084mm"
+   viewBox="0 0 55.827084 55.827084"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:export-batch-path="..\..\codingprojects\TelephoneTestHomePage\testhtml\images\circleAnimation"
+   inkscape:export-batch-name="batch"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="circles.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.53858859"
+     inkscape:cx="460.46278"
+     inkscape:cy="283.14747"
+     inkscape:window-width="1846"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer11" /><defs
+     id="defs1"><clipPath
+       id="clip2_6491_7746"><rect
+         width="211"
+         height="211"
+         fill="#ffffff"
+         transform="translate(20,251)"
+         id="rect6"
+         x="0"
+         y="0" /></clipPath></defs><g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="Layer 2"
+     transform="translate(-77.086459,-120.58646)"><g
+       clip-path="url(#clip2_6491_7746)"
+       id="g3"
+       transform="matrix(0.26458333,0,0,0.26458333,71.794792,54.176043)"
+       style="fill:none"><path
+         d="M 87.79,452.915 C 99.475,457.489 112.194,460 125.5,460 182.661,460 229,413.661 229,356.5 c 0,-1.171 -0.022,-2.338 -0.061,-3.5 h 2.001 c 0.038,1.162 0.06,2.329 0.06,3.5 0,58.266 -47.234,105.5 -105.5,105.5 -13.723,0 -26.8335,-2.62 -38.8594,-7.387 z M 213.317,298.018 c 8.986,13.466 14.957,29.114 16.949,45.982 h -2.016 c -1.973,-16.39 -7.776,-31.601 -16.489,-44.712 z m -40.955,-36.064 c 15.703,7.798 29.186,19.393 39.25,33.583 l -1.553,1.269 c -9.888,-13.98 -23.153,-25.401 -38.61,-33.072 z M 42.1055,291.876 C 61.4054,267.006 91.5829,251 125.5,251 c 14.699,0 28.695,3.008 41.409,8.439 l -0.915,1.785 C 153.556,255.931 139.87,253 125.5,253 92.2013,253 62.5768,268.726 43.6445,293.155 Z m 32.1152,154.547 c 2.8728,1.642 5.8313,3.151 8.8682,4.516 l -1.1387,1.681 c -3.0338,-1.377 -5.9911,-2.893 -8.8633,-4.54 z M 20,356.5 c 0,-21.831 6.6313,-42.114 17.9893,-58.943 l 1.5468,1.285 C 28.4624,315.319 22,335.155 22,356.5 c 0,35.279 17.6506,66.435 44.6025,85.119 l -1.1298,1.652 C 37.9948,424.227 20,392.464 20,356.5 Z"
+         fill="#d4af37"
+         id="path3" /></g></g></svg>
