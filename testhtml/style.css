@@ -138,10 +138,10 @@
 }
 .phases{
     position: absolute;
-    top:calc(5% + 14px);
+    top:calc(5% + 20px);
     /* width:100%; */
-    width:250px;
-    height: 25px;
+    width:200px;
+    height: 20px;
     font-size: 1.5rem;
     font-weight: bold;
     background-image: url('./images/phases.svg');
@@ -151,7 +151,7 @@
     background-size: contain;
     text-align: center;
     letter-spacing: 2px;
-    z-index: 3;
+    z-index: 0;
 
 
 }
@@ -238,7 +238,7 @@
     justify-content: center;
     z-index: 0;
     animation: rotate 10s linear infinite;
-    background-image: url(./images/Icon\ Circle.svg);
+    background-image: url(./images/Icon\ Circle-white.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,18 +317,18 @@
 
 }
 .button.start{
-    background-image:url('./images/Button-start.svg');
+    background-image:url('./images/buttons/Button-game-big.svg');
         min-width:220px;
 
 }
 
 .button.tutorial{
-    background-image:url('./images/Button-tutorial.svg');
+    background-image:url('./images/buttons/Button\ -tutorial-big.svg');
     min-width:220px;
 }
 
 .button.luck{
-    background-image:url('./images/Button-luck.svg');
+    background-image:url('./images/buttons/Button-description-big.svg');
         min-width:180px;
         margin-left:5px;
 
@@ -364,6 +364,15 @@
     }
     .button.start, .button.tutorial, .button.luck {
         min-width: 100%;
+    }
+    .button.start{
+        background-image:url('./images/buttons/Button-game-small.svg');
+    }
+    .button.tutorial{
+        background-image:url('./images/buttons/Button-tutorial-small.svg');
+    }
+    .button.luck{
+        background-image:url('./images/buttons/Button-description-small.svg');
     }
 }
 
