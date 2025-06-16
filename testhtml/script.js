@@ -1,5 +1,5 @@
  const eyeAnimationLength = 5000;
-    const starAnimationLength = 1500;
+    // const starAnimationLength = 1500;
 
     //the size of the canvas with the class frame is 100 % of the window size
     let frameCanvas = document.querySelectorAll('.frame');
@@ -103,121 +103,121 @@
     }
 
     
-    const starFrames = [];
-    for (let j = 1; j <= 13; j++) {
-        starFrames.push(`./images/starAnimation2/star4_${j}.svg`);
-    }
+    // const starFrames = [];
+    // for (let j = 1; j <= 13; j++) {
+    //     starFrames.push(`./images/starAnimation2/star4_${j}.svg`);
+    // }
 
 
-    const starCanvas = document.getElementById('starAnimationCanvas');
-    const starCtx = starCanvas.getContext('2d');
-    const starFrameCount = starFrames.length;
-    const starFrameDuration = starAnimationLength / starFrameCount; // 3s animation, 16 frames
+    // const starCanvas = document.getElementById('starAnimationCanvas');
+    // const starCtx = starCanvas.getContext('2d');
+    // const starFrameCount = starFrames.length;
+    // const starFrameDuration = starAnimationLength / starFrameCount; // 3s animation, 16 frames
 
 
 
-    const starImages = [];
-    let starLoaded = 0;
-    for (let j = 0; j < starFrameCount; j++) {
-        const img = new Image();
-        img.src = starFrames[j];
-        img.onload = () => {
-            starLoaded++;
-            if (starLoaded === starFrameCount) starStartAnimation();
-        };
-        starImages.push(img);
-    }
+    // const starImages = [];
+    // let starLoaded = 0;
+    // for (let j = 0; j < starFrameCount; j++) {
+    //     const img = new Image();
+    //     img.src = starFrames[j];
+    //     img.onload = () => {
+    //         starLoaded++;
+    //         if (starLoaded === starFrameCount) starStartAnimation();
+    //     };
+    //     starImages.push(img);
+    // }
 
-    function starStartAnimation() {
-        let startTime = null;
-        function animateStar(ts) {
-            if (!startTime) startTime = ts;
-            const elapsed = (ts - startTime) % starAnimationLength;
-            const frameIdx = Math.floor(elapsed / starFrameDuration);
-            starCtx.clearRect(0, 0, starCanvas.width, starCanvas.height);
-            // Draw the image centered without stretching (preserve aspect ratio)
-            const img = starImages[frameIdx];
-            const imgAspect = img.width / img.height;
-            const canvasAspect = starCanvas.width / starCanvas.height;
-            let drawWidth, drawHeight, offsetX, offsetY;
+    // function starStartAnimation() {
+    //     let startTime = null;
+    //     function animateStar(ts) {
+    //         if (!startTime) startTime = ts;
+    //         const elapsed = (ts - startTime) % starAnimationLength;
+    //         const frameIdx = Math.floor(elapsed / starFrameDuration);
+    //         starCtx.clearRect(0, 0, starCanvas.width, starCanvas.height);
+    //         // Draw the image centered without stretching (preserve aspect ratio)
+    //         const img = starImages[frameIdx];
+    //         const imgAspect = img.width / img.height;
+    //         const canvasAspect = starCanvas.width / starCanvas.height;
+    //         let drawWidth, drawHeight, offsetX, offsetY;
 
-            if (imgAspect > canvasAspect) {
-                drawWidth = starCanvas.width;
-                drawHeight = starCanvas.width / imgAspect;
-                offsetX = 0;
-                offsetY = (starCanvas.height - drawHeight) / 2;
-            } else {
-                drawHeight = starCanvas.height;
-                drawWidth = starCanvas.height * imgAspect;
-                offsetX = (starCanvas.width - drawWidth) / 2;
-                offsetY = 0;
-            }
+    //         if (imgAspect > canvasAspect) {
+    //             drawWidth = starCanvas.width;
+    //             drawHeight = starCanvas.width / imgAspect;
+    //             offsetX = 0;
+    //             offsetY = (starCanvas.height - drawHeight) / 2;
+    //         } else {
+    //             drawHeight = starCanvas.height;
+    //             drawWidth = starCanvas.height * imgAspect;
+    //             offsetX = (starCanvas.width - drawWidth) / 2;
+    //             offsetY = 0;
+    //         }
 
-            starCtx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
-            requestAnimationFrame(animateStar);
-        }
-        requestAnimationFrame(animateStar);
-        // Start the animation
-    }
+    //         starCtx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+    //         requestAnimationFrame(animateStar);
+    //     }
+    //     requestAnimationFrame(animateStar);
+    //     // Start the animation
+    // }
 
 
     
     // Circle animation setup
-    const circleFrames = [];
-    for (let k = 1; k <= 12; k++) {
-        circleFrames.push(`./images/circleAnimation2/batch_layer ${k}.svg`);
-    }
+    // const circleFrames = [];
+    // for (let k = 1; k <= 12; k++) {
+    //     circleFrames.push(`./images/circleAnimation2/batch_layer ${k}.svg`);
+    // }
 
-    const circleCanvas = document.getElementById('circleAnimationCanvas');
+    // const circleCanvas = document.getElementById('circleAnimationCanvas');
    
  
   
 
-    const circleCtx = circleCanvas.getContext('2d');
-    const circleFrameCount = circleFrames.length;
-    const circleAnimationLength = 3000; // 3 seconds
-    const circleFrameDuration = circleAnimationLength / circleFrameCount;
+    // const circleCtx = circleCanvas.getContext('2d');
+    // const circleFrameCount = circleFrames.length;
+    // const circleAnimationLength = 5000; // 3 seconds
+    // const circleFrameDuration = circleAnimationLength / circleFrameCount;
 
-    const circleImages = [];
-    let circleLoaded = 0;
-    for (let k = 0; k < circleFrameCount; k++) {
-        const img = new Image();
-        img.src = circleFrames[k];
-        img.onload = () => {
-            circleLoaded++;
-            if (circleLoaded === circleFrameCount) circleStartAnimation();
-        };
-        circleImages.push(img);
-    }
+    // const circleImages = [];
+    // let circleLoaded = 0;
+    // for (let k = 0; k < circleFrameCount; k++) {
+    //     const img = new Image();
+    //     img.src = circleFrames[k];
+    //     img.onload = () => {
+    //         circleLoaded++;
+    //         if (circleLoaded === circleFrameCount) circleStartAnimation();
+    //     };
+    //     circleImages.push(img);
+    // }
 
-    function circleStartAnimation() {
-        let startTime = null;
-        function animateCircle(ts) {
-            if (!startTime) startTime = ts;
-            const elapsed = (ts - startTime) % circleAnimationLength;
-            const frameIdx = Math.floor(elapsed / circleFrameDuration);
-            circleCtx.clearRect(0, 0, circleCanvas.width, circleCanvas.height);
-            // Draw the image centered without stretching (preserve aspect ratio)
-            const img = circleImages[frameIdx];
-            const imgAspect = img.width / img.height;
-            const canvasAspect = circleCanvas.width / circleCanvas.height;
-            let drawWidth, drawHeight, offsetX, offsetY;
+    // function circleStartAnimation() {
+    //     let startTime = null;
+    //     function animateCircle(ts) {
+    //         if (!startTime) startTime = ts;
+    //         const elapsed = (ts - startTime) % circleAnimationLength;
+    //         const frameIdx = Math.floor(elapsed / circleFrameDuration);
+    //         circleCtx.clearRect(0, 0, circleCanvas.width, circleCanvas.height);
+    //         // Draw the image centered without stretching (preserve aspect ratio)
+    //         const img = circleImages[frameIdx];
+    //         const imgAspect = img.width / img.height;
+    //         const canvasAspect = circleCanvas.width / circleCanvas.height;
+    //         let drawWidth, drawHeight, offsetX, offsetY;
 
-            if (imgAspect > canvasAspect) {
-                drawWidth = circleCanvas.width;
-                drawHeight = circleCanvas.width / imgAspect;
-                offsetX = 0;
-                offsetY = (circleCanvas.height - drawHeight) / 2;
-            } else {
-                drawHeight = circleCanvas.height;
-                drawWidth = circleCanvas.height * imgAspect;
-                offsetX = (circleCanvas.width - drawWidth) / 2;
-                offsetY = 0;
-            }
-            // circleCtx?.drawImage(img, offsetX, offsetY, circleCanvas.width, circleCanvas.height);
+    //         if (imgAspect > canvasAspect) {
+    //             drawWidth = circleCanvas.width;
+    //             drawHeight = circleCanvas.width / imgAspect;
+    //             offsetX = 0;
+    //             offsetY = (circleCanvas.height - drawHeight) / 2;
+    //         } else {
+    //             drawHeight = circleCanvas.height;
+    //             drawWidth = circleCanvas.height * imgAspect;
+    //             offsetX = (circleCanvas.width - drawWidth) / 2;
+    //             offsetY = 0;
+    //         }
+    //         // circleCtx?.drawImage(img, offsetX, offsetY, circleCanvas.width, circleCanvas.height);
 
-            circleCtx?.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
-            requestAnimationFrame(animateCircle);
-        }
-        requestAnimationFrame(animateCircle);
-    }
+    //         circleCtx?.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+    //         requestAnimationFrame(animateCircle);
+    //     }
+    //     requestAnimationFrame(animateCircle);
+    // }
