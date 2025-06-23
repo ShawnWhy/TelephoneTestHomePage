@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.vertical-bar-top{
+    position: absolute;
+    top: -5%;
+
+    height:50vh;
+    background-color: #060622ff;
+    
+}
+.vertical-bar-bottom{
+    position: absolute;
+    bottom: -5%;
+
+    height:50vh;
+    background-color: #060622ff;
+}
+.horizontal-bar-left{
+    position: absolute;
+    left: -5%;
+
+    width:50vw;
+    background-color: #060622ff;
+}
+.horizontal-bar-right{
+    position: absolute;
+    right: -5%;
+
+    width:50vw;
+    background-color: #060622ff;
+}
+.mainContainer {
+    width: 100vw;
+    height:max-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #060622ff;
+    overflow: scroll;
+}
+.frame2{
+    position:absolute;
+    min-height:80%;
+    width:80%;
+    border:2px  solid;
+    border-color: #d4af37;
+    margin:20%;
+    overflow: visible;
+    border-radius:5px;
+    top:10%;
+    margin-top:0;
+}
+/* Frame styling */
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 16px;
+    /* Remove background-image from .frame itself
+    background-image: url('./images/boarder-big.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    pointer-events: none;
+    z-index: 1; */
+}
+.frame-side {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+.frame-side.top {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 32px;
+    background-image: url('./images/Boarder-big.svg');
+    background-position: top center;
+}
+.frame-side.bottom {
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 32px;
+    background-image: url('./images/Boarder-big.svg');
+    background-position: bottom center;
+}
+.frame-side.left {
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 100vh;
+    background-image: url('./images/Boarder-big.svg');
+    background-position: left center;
+}
+.frame-side.right {
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 100vh;
+    background-image: url('./images/Boarder-big.svg');
+    background-position: right center;
+}
+
+/* Left balls styling */
+.leftBalls {
+    position: absolute;
+    left: calc(10% - 20px);
+    
+    width: 40px;
+    height: 100%;
+    background-image: url('./images/Side-circles.svg');
+    border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+}
+
+/* Right balls styling */
+.rightBalls {
+    position: absolute;
+    right: calc(10% - 20px);
+    
+    width: 40px;
+    height: 100%;
+    background-image: url('./images/Side-circles.svg');
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.phases{
+    position: absolute;
+    top:calc(10% - 10px);
+    /* width:100%; */
+    width:200px;
+    height: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url('./images/phases.svg');
+    background-color: #060622ff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 0;
+
+
+}
+
+/* Grain texture styling */
+.grainTexture {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url('./images/Noise\ Texture.png');
+    background-size: 200% 200%;
+    opacity: .5;
+    z-index: 2;
+}
+.titleText{
+    position: relative;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-image: url('./images/Title.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width:300px;
+    height:50px;
+    
+    letter-spacing: 2px;
+    z-index: 3;
+    margin-bottom:-15px;
+}
+.subtitleText{
+    position: relative;
+    
+    left: 50%;
+    width:300px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url('./images/Subtitle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 3;
+}
+
+/* Title styling */
+.title {
+    position: relative;
+    margin-bottom:50px;
+    z-index: 0;
+    
+    margin:auto;
+    margin-top:100px;
+
+    
+
+    /* font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    margin: 32px 0 16px 0;
+    text-align: center;
+    letter-spacing: 2px; */
+}
+.animationsContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    margin-bottom:50px;
+    margin-top:40px;
+}
+#iconsAnimation{
+      top: -60%;
+    margin: 0;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    animation: rotate 20s linear infinite;
+    background-image: url(./images/Icon\ Circle-white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Eye animation styling */
+.circleAnimation {
+    /* width: 180px;
+    height: 180px; */
+    border-radius: 50% 50% 50% 50% / 60% 60% 60% 60%;
+    margin: 0 auto 32px auto;
+    position: absolute;
+    height:200px;
+    width:200px;
+
+    background-image: url('./images/circleAnimation/batch_Layer\ 1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:rotate 40s linear infinite;
+    animation-direction: reverse;
+}
+.eyeAnimation {
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 60% 60%;
+    margin: 0 auto 32px auto;
+    position: absolute;
+
+    background-image: url('./images/eyesFilled/eyes_Layer\ 0.svg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.irisAnimation{
+
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: #d4af37 3px solid;
+    position: relative;
+    top: -16px;
+    animation: moveIris 7s linear infinite;
+    transform-origin:center;
+
+}
+
+@keyframes moveIris {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+        border: 3px solid #d4af37;
+      }
+      10% {
+        transform: translate(5px, 0) scale(1);
+        border: 3px solid #d4af37;
+      }
+      20% {
+        transform: translate(0, 5px) scale(1);
+        border: 3px solid #d4af37;
+      }
+      30% {
+        transform: translate(-5px, 0) scale(1);
+        border: 3px solid #d4af37;
+      }
+      40% {
+        transform: translate(0, -5px) scale(1);
+        border: 3px solid #d4af37;
+      }
+      50% {
+        transform: translate(0, 0) scale(1);
+        border: 3px solid #d4af37;
+      }
+      60% {
+        transform: translate(0, 0) scale(1.3);
+        border: 2px solid #d4af37;
+      }
+      70% {
+        transform: translate(0, 0) scale(1);
+        border: 3px solid #d4af37;
+      }
+      80% {
+        transform: translate(0, 0) scale(.5);
+        border: 3px solid #d4af37;
+      }
+      90% {
+        transform: translate(0, 0) scale(1);
+        border: 3px solid #d4af37;
+      }
+      100% {
+        transform: translate(0, 0) scale(1);
+        border: 3px solid #d4af37;
+      }
+    }
+
+.starAnimation {
+    /* width: 150px;
+    height: 150px; */
+    border-radius: 50% 50% 50% 50% / 60% 60% 60% 60%;    
+    margin: 0 auto 32px auto;
+    position: absolute;
+    height:120px;
+    width:120px;    
+    background-image: url('./images/starAnimation/batch_Layer\ 1_star.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:rotate 40s linear infinite;
+}
+
+/* CSS can't interpolate between images, only switch them.
+   For smooth interpolation, use SVG with SMIL/JS or a canvas-based approach. */
+
+
+/* Button styling */
+.button {
+    /* width: 180px; */
+    height: 48px;
+    margin: 12px auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    /* background-size:cover; */
+    position:relative;
+    margin:10px;
+    
+
+
+}
+.button.start{
+    background-image:url('./images/buttons/Button-game-big.svg');
+        min-width:168px;
+
+}
+
+.button.tutorial{
+    background-image:url('./images/buttons/Button-tutorial-big.svg');
+    min-width:168px;
+}
+
+.button.luck{
+    background-image:url('./images/buttons/Button-description-big.svg');
+        min-width:168px;
+
+}
+
+
+
+
+
+.button:hover {
+    top: -5px;
+}
+
+.buttonsContainer {
+    position: relative;
+    margin: 0 auto;
+    /* width: 60%; */
+    width:max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+        margin-bottom:40px;
+
+}
+
+
+@media (max-width: 712px) {
+    .buttonsContainer {
+        flex-direction: row;
+        
+}   
+    .button {
+        /* min-width: 100%; */
+        margin: 0;
+        background-size: contain    ;
+            width: 146px;
+    margin: auto;
+    }
+    .button.start, .button.tutorial, .button.luck {
+    }
+    .button.start{
+        background-image:url('./images/buttons/Button-game-medium.svg');
+    }
+    .button.tutorial{
+        background-image:url('./images/buttons/Button-tutorial-medium.svg');
+    }
+    .button.luck{
+        background-image:url('./images/buttons/Button-description-medium.svg');
+    }
+}
+
+@media (max-width: 629px) {
+    .buttonsContainer {
+        flex-direction: column;
+        max-width: 100%;
+        
+}   
+    .button {
+        min-width: 100%;
+        margin: 0;
+        background-size: contain    ;
+            width: 300px;
+    margin: 5px;
+    max-width: calc(100% - 10px);
+    }
+    .button.start, .button.tutorial, .button.luck {
+        /* max-width: 100%; */
+    }
+    .button.start{
+        background-image:url('./images/buttons/Button-game-small.svg');
+    }
+    .button.tutorial{
+        background-image:url('./images/buttons/Button-tutorial-small.svg');
+    }
+    .button.luck{
+        background-image:url('./images/buttons/Button-description-small.svg');
+    }
+}
+
+.visually-hidden {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

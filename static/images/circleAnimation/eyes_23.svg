@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="88.659882"
+   height="45.426666"
+   viewBox="0 0 88.659882 45.426668"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath99">
+      <path
+         d="M 0,0 H 596 V 842 H 0 Z"
+         id="path99" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath100">
+      <path
+         d="M 0,0 H 596 V 842 H 0 Z"
+         id="path100" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath101">
+      <path
+         d="M 0,0 H 596 V 842 H 0 Z"
+         id="path101" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath105">
+      <path
+         d="m 288.578,489.883 h 70.5 v 40.816 h -70.5 z"
+         transform="scale(1.3333333)"
+         id="path105" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer22"
+     transform="translate(-382.30831,-603.0091)">
+    <g
+       id="g104"
+       clip-path="url(#clipPath105)"
+       transform="translate(-5.6924036,-53.709555)">
+      <path
+         d="m 293.125,509.578 4.582,-4.57 c 14.648,-14.606 38.434,-14.606 53.082,0 l 4.582,4.57 -4.582,4.567 c -14.648,14.609 -38.434,14.609 -53.082,0 z"
+         style="fill:#060622;fill-opacity:1;fill-rule:nonzero;stroke:#d4af37;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="scale(1.3333333)"
+         clip-path="url(#clipPath99)"
+         id="path102" />
+      <path
+         d="m 324.293,525.109 c 8.602,0 15.578,-6.953 15.578,-15.535 0,-8.578 -6.976,-15.535 -15.578,-15.535 -8.605,0 -15.582,6.957 -15.582,15.535 0,8.582 6.977,15.535 15.582,15.535 z"
+         style="fill:#060622;fill-opacity:1;fill-rule:nonzero;stroke:#d4af37;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="scale(1.3333333)"
+         clip-path="url(#clipPath100)"
+         id="path103" />
+      <path
+         d="m 323.828,513.922 c 2.07,0 3.75,-1.68 3.75,-3.75 0,-2.07 -1.68,-3.75 -3.75,-3.75 -2.074,0 -3.75,1.68 -3.75,3.75 0,2.07 1.676,3.75 3.75,3.75 z"
+         style="fill:#060622;fill-opacity:1;fill-rule:nonzero;stroke:#d4af37;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="scale(1.3333333)"
+         clip-path="url(#clipPath101)"
+         id="path104" />
+    </g>
+  </g>
+</svg>

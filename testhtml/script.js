@@ -98,7 +98,7 @@
             ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
             requestAnimationFrame(animateEye);
         }
-        requestAnimationFrame(animateEye);
+        // requestAnimationFrame(animateEye);
         // Start the animation
     }
 
